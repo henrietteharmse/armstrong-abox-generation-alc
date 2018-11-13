@@ -1,0 +1,251 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/henriette/ontologies/2017/10/untitled-ontology-677#"
+     xml:base="http://www.semanticweb.org/henriette/ontologies/2017/10/untitled-ontology-677"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/10/untitled-ontology-677"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/henriette/ontologies/2017/10/untitled-ontology-677#Composite -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/10/untitled-ontology-677#Composite">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/henriette/ontologies/2017/10/untitled-ontology-677#Prime"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/henriette/ontologies/2017/10/untitled-ontology-677#Even -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/10/untitled-ontology-677#Even">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/henriette/ontologies/2017/10/untitled-ontology-677#Odd"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/henriette/ontologies/2017/10/untitled-ontology-677#Odd -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/10/untitled-ontology-677#Odd"/>
+    
+
+
+    <!-- http://www.semanticweb.org/henriette/ontologies/2017/10/untitled-ontology-677#Prime -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/10/untitled-ontology-677#Prime">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/henriette/ontologies/2017/10/untitled-ontology-677#Square"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/henriette/ontologies/2017/10/untitled-ontology-677#Square -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/10/untitled-ontology-677#Square"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/henriette/ontologies/2017/10/untitled-ontology-677#xViolating1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/10/untitled-ontology-677#xViolating1">
+        <rdf:type>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/10/untitled-ontology-677#Composite"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/10/untitled-ontology-677#Even"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/10/untitled-ontology-677#Square"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/10/untitled-ontology-677#Composite"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/10/untitled-ontology-677#Even"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/10/untitled-ontology-677#Square"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:complementOf>
+            </owl:Class>
+        </rdf:type>
+        <rdfs:comment>Subsumee = ObjectUnionOf(&lt;http://www.semanticweb.org/henriette/ontologies/2017/10/untitled-ontology-677#Composite&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2017/10/untitled-ontology-677#Even&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2017/10/untitled-ontology-677#Square&gt;)
+Subsumer = ObjectIntersectionOf(&lt;http://www.semanticweb.org/henriette/ontologies/2017/10/untitled-ontology-677#Composite&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2017/10/untitled-ontology-677#Even&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2017/10/untitled-ontology-677#Square&gt;)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/henriette/ontologies/2017/10/untitled-ontology-677#xViolating2 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/10/untitled-ontology-677#xViolating2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/henriette/ontologies/2017/10/untitled-ontology-677#Square"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/10/untitled-ontology-677#Composite"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/10/untitled-ontology-677#Even"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:complementOf>
+            </owl:Class>
+        </rdf:type>
+        <rdfs:comment>Subsumee = &lt;http://www.semanticweb.org/henriette/ontologies/2017/10/untitled-ontology-677#Square&gt;
+Subsumer = ObjectIntersectionOf(&lt;http://www.semanticweb.org/henriette/ontologies/2017/10/untitled-ontology-677#Composite&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2017/10/untitled-ontology-677#Even&gt;)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/henriette/ontologies/2017/10/untitled-ontology-677#xViolating3 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/10/untitled-ontology-677#xViolating3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/henriette/ontologies/2017/10/untitled-ontology-677#Even"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/10/untitled-ontology-677#Composite"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/10/untitled-ontology-677#Square"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:complementOf>
+            </owl:Class>
+        </rdf:type>
+        <rdfs:comment>Subsumee = &lt;http://www.semanticweb.org/henriette/ontologies/2017/10/untitled-ontology-677#Even&gt;
+Subsumer = ObjectIntersectionOf(&lt;http://www.semanticweb.org/henriette/ontologies/2017/10/untitled-ontology-677#Composite&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2017/10/untitled-ontology-677#Square&gt;)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/henriette/ontologies/2017/10/untitled-ontology-677#xViolating4 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/10/untitled-ontology-677#xViolating4">
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/10/untitled-ontology-677#Even"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/10/untitled-ontology-677#Square"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:complementOf rdf:resource="http://www.semanticweb.org/henriette/ontologies/2017/10/untitled-ontology-677#Composite"/>
+            </owl:Class>
+        </rdf:type>
+        <rdfs:comment>Subsumee = ObjectIntersectionOf(&lt;http://www.semanticweb.org/henriette/ontologies/2017/10/untitled-ontology-677#Even&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2017/10/untitled-ontology-677#Square&gt;)
+Subsumer = &lt;http://www.semanticweb.org/henriette/ontologies/2017/10/untitled-ontology-677#Composite&gt;</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/henriette/ontologies/2017/10/untitled-ontology-677#xViolating5 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/10/untitled-ontology-677#xViolating5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/henriette/ontologies/2017/10/untitled-ontology-677#Composite"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/10/untitled-ontology-677#Even"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/10/untitled-ontology-677#Square"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:complementOf>
+            </owl:Class>
+        </rdf:type>
+        <rdfs:comment>Subsumee = &lt;http://www.semanticweb.org/henriette/ontologies/2017/10/untitled-ontology-677#Composite&gt;
+Subsumer = ObjectIntersectionOf(&lt;http://www.semanticweb.org/henriette/ontologies/2017/10/untitled-ontology-677#Even&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2017/10/untitled-ontology-677#Square&gt;)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/henriette/ontologies/2017/10/untitled-ontology-677#xViolating6 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/10/untitled-ontology-677#xViolating6">
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/10/untitled-ontology-677#Composite"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/10/untitled-ontology-677#Square"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:complementOf rdf:resource="http://www.semanticweb.org/henriette/ontologies/2017/10/untitled-ontology-677#Even"/>
+            </owl:Class>
+        </rdf:type>
+        <rdfs:comment>Subsumee = ObjectIntersectionOf(&lt;http://www.semanticweb.org/henriette/ontologies/2017/10/untitled-ontology-677#Composite&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2017/10/untitled-ontology-677#Square&gt;)
+Subsumer = &lt;http://www.semanticweb.org/henriette/ontologies/2017/10/untitled-ontology-677#Even&gt;</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/henriette/ontologies/2017/10/untitled-ontology-677#xViolating7 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/10/untitled-ontology-677#xViolating7">
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/10/untitled-ontology-677#Composite"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/10/untitled-ontology-677#Even"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:complementOf rdf:resource="http://www.semanticweb.org/henriette/ontologies/2017/10/untitled-ontology-677#Square"/>
+            </owl:Class>
+        </rdf:type>
+        <rdfs:comment>Subsumee = ObjectIntersectionOf(&lt;http://www.semanticweb.org/henriette/ontologies/2017/10/untitled-ontology-677#Composite&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2017/10/untitled-ontology-677#Even&gt;)
+Subsumer = &lt;http://www.semanticweb.org/henriette/ontologies/2017/10/untitled-ontology-677#Square&gt;</rdfs:comment>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.2.2017-10-13T07:13:07Z) https://github.com/owlcs/owlapi/ -->
+
+

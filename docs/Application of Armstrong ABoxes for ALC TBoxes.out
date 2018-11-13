@@ -1,0 +1,18 @@
+\BOOKMARK [1][-]{section.1}{1. Armstrong ABoxes}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{1.1. A Quick Review of the Armstrong ABox Algorithm}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{1.2. Limitations of Armstrong ABoxes for ALC TBoxes}{section.1}% 3
+\BOOKMARK [2][-]{subsection.1.3}{1.3. Only support ALC TBoxes}{section.1}% 4
+\BOOKMARK [2][-]{subsection.1.4}{1.4. The Revised M-permissible Restriction}{section.1}% 5
+\BOOKMARK [2][-]{subsection.1.5}{1.5. The Disadvantage of Optimal Counterexamples - The Case for Keeping M Small}{section.1}% 6
+\BOOKMARK [2][-]{subsection.1.6}{1.6. M as a Singleton Set is not Helpful}{section.1}% 7
+\BOOKMARK [1][-]{section.2}{2. Analysing an ALC TBox using Armstrong ABoxes}{}% 8
+\BOOKMARK [2][-]{subsection.2.1}{2.1. An Approach for Analysing ALC TBoxes using Armstrong ABoxes}{section.2}% 9
+\BOOKMARK [2][-]{subsection.2.2}{2.2. Example Ontology}{section.2}% 10
+\BOOKMARK [2][-]{table.2}{2.3. Analysing the Person Concept}{section.2}% 11
+\BOOKMARK [1][-]{section.3}{3. Using Armstrong ABoxes to Validate UML Class Diagrams}{}% 12
+\BOOKMARK [2][-]{subsection.3.1}{3.1. How Armstrong ABoxes relates to Scenario Tests}{section.3}% 13
+\BOOKMARK [2][-]{figure.1}{3.2. Example UML Class Diagram}{section.3}% 14
+\BOOKMARK [2][-]{subsection.3.3}{3.3. Analysis of a UML Class Diagram using Armstrong ABoxes for ALC TBoxes}{section.3}% 15
+\BOOKMARK [2][-]{subsection.3.4}{3.4. Limitations of Armstrong ABoxes for ALC TBoxes for UML Class Diagrams}{section.3}% 16
+\BOOKMARK [2][-]{subsection.3.5}{3.5. Applying Armstrong ABoxes for n-ary Relations to UML Class Diagrams}{section.3}% 17
+\BOOKMARK [1][-]{section*.1}{References}{}% 18

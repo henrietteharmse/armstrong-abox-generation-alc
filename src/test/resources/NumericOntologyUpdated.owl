@@ -1,0 +1,348 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600#"
+     xml:base="http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600#Composite -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600#Composite"/>
+    
+
+
+    <!-- http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600#Even -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600#Even"/>
+    
+
+
+    <!-- http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600#Odd -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600#Odd"/>
+    
+
+
+    <!-- http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600#Prime -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600#Prime"/>
+    
+
+
+    <!-- http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600#Square -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600#Square"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600#number_1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600#number_1">
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600#Odd"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600#Square"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600#Composite"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600#Even"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600#Prime"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:complementOf>
+            </owl:Class>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600#number_15 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600#number_15">
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600#Composite"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600#Odd"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600#Even"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600#Prime"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600#Square"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:complementOf>
+            </owl:Class>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600#number_2 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600#number_2">
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600#Even"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600#Prime"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600#Composite"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600#Odd"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600#Square"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:complementOf>
+            </owl:Class>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600#number_3 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600#number_3">
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600#Odd"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600#Prime"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600#Composite"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600#Even"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600#Square"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:complementOf>
+            </owl:Class>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600#number_4 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600#number_4">
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600#Composite"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600#Even"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600#Square"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600#Odd"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600#Prime"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:complementOf>
+            </owl:Class>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600#number_6 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600#number_6">
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600#Composite"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600#Even"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600#Odd"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600#Prime"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600#Square"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:complementOf>
+            </owl:Class>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600#number_9 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600#number_9">
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600#Composite"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600#Odd"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600#Square"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600#Even"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600#Prime"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:complementOf>
+            </owl:Class>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600#Composite"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600#Prime"/>
+        </owl:intersectionOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600#Even"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600#Odd"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600#Square"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600#Even"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600#Odd"/>
+        </owl:intersectionOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600#Composite"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600#Prime"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600#Square"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600#Even"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600#Square"/>
+        </owl:intersectionOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600#Composite"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600#Prime"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600#Square"/>
+        </owl:intersectionOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600#Composite"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600#Even"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2017/9/untitled-ontology-600#Odd"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.2.2017-10-13T07:13:07Z) https://github.com/owlcs/owlapi/ -->
+
+

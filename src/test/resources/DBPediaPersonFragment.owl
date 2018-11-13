@@ -1,0 +1,198 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://dbpedia_person_fragment/ontology#"
+     xml:base="http://dbpedia_person_fragment/ontology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://dbpedia_person_fragment/ontology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dbpedia_person_fragment/ontology#achievement -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia_person_fragment/ontology#achievement">
+        <rdfs:domain rdf:resource="http://dbpedia_person_fragment/ontology#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia_person_fragment/ontology#currentWorldChampion -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia_person_fragment/ontology#currentWorldChampion"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dbpedia_person_fragment/ontology#age -->
+
+    <owl:DatatypeProperty rdf:about="http://dbpedia_person_fragment/ontology#age">
+        <rdfs:domain rdf:resource="http://dbpedia_person_fragment/ontology#Agent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dbpedia_person_fragment/ontology#Activity -->
+
+    <owl:Class rdf:about="http://dbpedia_person_fragment/ontology#Activity">
+        <owl:disjointWith rdf:resource="http://dbpedia_person_fragment/ontology#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia_person_fragment/ontology#Agent -->
+
+    <owl:Class rdf:about="http://dbpedia_person_fragment/ontology#Agent">
+        <owl:disjointWith rdf:resource="http://dbpedia_person_fragment/ontology#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia_person_fragment/ontology#Company -->
+
+    <owl:Class rdf:about="http://dbpedia_person_fragment/ontology#Company">
+        <rdfs:subClassOf rdf:resource="http://dbpedia_person_fragment/ontology#Organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia_person_fragment/ontology#Deity -->
+
+    <owl:Class rdf:about="http://dbpedia_person_fragment/ontology#Deity">
+        <rdfs:subClassOf rdf:resource="http://dbpedia_person_fragment/ontology#Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia_person_fragment/ontology#Employer -->
+
+    <owl:Class rdf:about="http://dbpedia_person_fragment/ontology#Employer">
+        <rdfs:subClassOf rdf:resource="http://dbpedia_person_fragment/ontology#Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia_person_fragment/ontology#Family -->
+
+    <owl:Class rdf:about="http://dbpedia_person_fragment/ontology#Family">
+        <rdfs:subClassOf rdf:resource="http://dbpedia_person_fragment/ontology#Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia_person_fragment/ontology#Forest -->
+
+    <owl:Class rdf:about="http://dbpedia_person_fragment/ontology#Forest">
+        <rdfs:subClassOf rdf:resource="http://dbpedia_person_fragment/ontology#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia_person_fragment/ontology#Game -->
+
+    <owl:Class rdf:about="http://dbpedia_person_fragment/ontology#Game">
+        <rdfs:subClassOf rdf:resource="http://dbpedia_person_fragment/ontology#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia_person_fragment/ontology#Group -->
+
+    <owl:Class rdf:about="http://dbpedia_person_fragment/ontology#Group">
+        <rdfs:subClassOf rdf:resource="http://dbpedia_person_fragment/ontology#Organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia_person_fragment/ontology#Mountain -->
+
+    <owl:Class rdf:about="http://dbpedia_person_fragment/ontology#Mountain">
+        <rdfs:subClassOf rdf:resource="http://dbpedia_person_fragment/ontology#Place"/>
+        <owl:disjointWith rdf:resource="http://dbpedia_person_fragment/ontology#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia_person_fragment/ontology#NobleFamily -->
+
+    <owl:Class rdf:about="http://dbpedia_person_fragment/ontology#NobleFamily">
+        <rdfs:subClassOf rdf:resource="http://dbpedia_person_fragment/ontology#Family"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia_person_fragment/ontology#Organization -->
+
+    <owl:Class rdf:about="http://dbpedia_person_fragment/ontology#Organization">
+        <rdfs:subClassOf rdf:resource="http://dbpedia_person_fragment/ontology#Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia_person_fragment/ontology#Person -->
+
+    <owl:Class rdf:about="http://dbpedia_person_fragment/ontology#Person">
+        <rdfs:subClassOf rdf:resource="http://dbpedia_person_fragment/ontology#Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia_person_fragment/ontology#Place -->
+
+    <owl:Class rdf:about="http://dbpedia_person_fragment/ontology#Place"/>
+    
+
+
+    <!-- http://dbpedia_person_fragment/ontology#Sales -->
+
+    <owl:Class rdf:about="http://dbpedia_person_fragment/ontology#Sales">
+        <rdfs:subClassOf rdf:resource="http://dbpedia_person_fragment/ontology#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia_person_fragment/ontology#Sport -->
+
+    <owl:Class rdf:about="http://dbpedia_person_fragment/ontology#Sport">
+        <rdfs:subClassOf rdf:resource="http://dbpedia_person_fragment/ontology#Activity"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

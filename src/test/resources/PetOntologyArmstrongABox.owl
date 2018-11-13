@@ -1,0 +1,184 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://henrietteharmse.com/tutorials/UniversalPropertyRestrictions/StartingOntology#"
+     xml:base="http://henrietteharmse.com/tutorials/UniversalPropertyRestrictions/StartingOntology"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://henrietteharmse.com/tutorials/PetOntology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://henrietteharmse.com/tutorials/PetOntology#owns -->
+
+
+    <owl:ObjectProperty rdf:about="http://henrietteharmse.com/tutorials/PetOntology#owns"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://henrietteharmse.com/tutorials/PetOntology#Dog -->
+
+
+    <owl:Class rdf:about="http://henrietteharmse.com/tutorials/PetOntology#Dog">
+        <owl:disjointWith rdf:resource="http://henrietteharmse.com/tutorials/PetOntology#DogLover"/>
+    </owl:Class>
+    
+
+
+    <!-- http://henrietteharmse.com/tutorials/PetOntology#DogLover -->
+
+
+    <owl:Class rdf:about="http://henrietteharmse.com/tutorials/PetOntology#DogLover">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://henrietteharmse.com/tutorials/PetOntology#owns"/>
+                <owl:allValuesFrom rdf:resource="http://henrietteharmse.com/tutorials/PetOntology#Dog"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://dbpedia_person_fragment/ontology#xViolating64 -->
+
+
+    <owl:NamedIndividual rdf:about="http://dbpedia_person_fragment/ontology#xViolating64">
+        <rdf:type>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://henrietteharmse.com/tutorials/PetOntology#Dog"/>
+                    <rdf:Description rdf:about="http://henrietteharmse.com/tutorials/PetOntology#DogLover"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://henrietteharmse.com/tutorials/PetOntology#owns"/>
+                        <owl:allValuesFrom rdf:resource="http://henrietteharmse.com/tutorials/PetOntology#Dog"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://henrietteharmse.com/tutorials/PetOntology#Dog"/>
+                            <rdf:Description rdf:about="http://henrietteharmse.com/tutorials/PetOntology#DogLover"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://henrietteharmse.com/tutorials/PetOntology#owns"/>
+                                <owl:allValuesFrom rdf:resource="http://henrietteharmse.com/tutorials/PetOntology#Dog"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:complementOf>
+            </owl:Class>
+        </rdf:type>
+        <rdfs:comment>Subsumee = ObjectUnionOf(&lt;http://henrietteharmse.com/tutorials/PetOntology#Dog&gt; &lt;http://henrietteharmse.com/tutorials/PetOntology#DogLover&gt; ObjectAllValuesFrom(&lt;http://henrietteharmse.com/tutorials/PetOntology#owns&gt; &lt;http://henrietteharmse.com/tutorials/PetOntology#Dog&gt;))
+Subsumer = ObjectIntersectionOf(&lt;http://henrietteharmse.com/tutorials/PetOntology#Dog&gt; &lt;http://henrietteharmse.com/tutorials/PetOntology#DogLover&gt; ObjectAllValuesFrom(&lt;http://henrietteharmse.com/tutorials/PetOntology#owns&gt; &lt;http://henrietteharmse.com/tutorials/PetOntology#Dog&gt;))</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia_person_fragment/ontology#xViolating65 -->
+
+
+    <owl:NamedIndividual rdf:about="http://dbpedia_person_fragment/ontology#xViolating65">
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://henrietteharmse.com/tutorials/PetOntology#owns"/>
+                        <owl:allValuesFrom rdf:resource="http://henrietteharmse.com/tutorials/PetOntology#Dog"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://henrietteharmse.com/tutorials/PetOntology#Dog"/>
+                            <rdf:Description rdf:about="http://henrietteharmse.com/tutorials/PetOntology#DogLover"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:complementOf>
+            </owl:Class>
+        </rdf:type>
+        <rdfs:comment>Subsumee = ObjectIntersectionOf(ObjectAllValuesFrom(&lt;http://henrietteharmse.com/tutorials/PetOntology#owns&gt; &lt;http://henrietteharmse.com/tutorials/PetOntology#Dog&gt;))
+Subsumer = ObjectIntersectionOf(&lt;http://henrietteharmse.com/tutorials/PetOntology#Dog&gt; &lt;http://henrietteharmse.com/tutorials/PetOntology#DogLover&gt;)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia_person_fragment/ontology#xViolating66 -->
+
+
+    <owl:NamedIndividual rdf:about="http://dbpedia_person_fragment/ontology#xViolating66">
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://henrietteharmse.com/tutorials/PetOntology#Dog"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://henrietteharmse.com/tutorials/PetOntology#DogLover"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://henrietteharmse.com/tutorials/PetOntology#owns"/>
+                                <owl:allValuesFrom rdf:resource="http://henrietteharmse.com/tutorials/PetOntology#Dog"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:complementOf>
+            </owl:Class>
+        </rdf:type>
+        <rdfs:comment>Subsumee = ObjectIntersectionOf(&lt;http://henrietteharmse.com/tutorials/PetOntology#Dog&gt;)
+Subsumer = ObjectIntersectionOf(&lt;http://henrietteharmse.com/tutorials/PetOntology#DogLover&gt; ObjectAllValuesFrom(&lt;http://henrietteharmse.com/tutorials/PetOntology#owns&gt; &lt;http://henrietteharmse.com/tutorials/PetOntology#Dog&gt;))</rdfs:comment>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.2.2017-10-13T07:13:07Z) https://github.com/owlcs/owlapi/ -->
+
+

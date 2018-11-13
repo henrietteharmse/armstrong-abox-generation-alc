@@ -1,0 +1,990 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/henriette/ontologies/2018/4/untitled-ontology-874#"
+     xml:base="http://www.semanticweb.org/henriette/ontologies/2018/4/untitled-ontology-874"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://armstrongaboxes.com/acl/university"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://armstrongaboxes.com/acl/university#attends -->
+
+
+    <owl:ObjectProperty rdf:about="http://armstrongaboxes.com/acl/university#attends"/>
+    
+
+
+    <!-- http://armstrongaboxes.com/acl/university#teaches -->
+
+
+    <owl:ObjectProperty rdf:about="http://armstrongaboxes.com/acl/university#teaches"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://armstrongaboxes.com/acl/university#Course -->
+
+
+    <owl:Class rdf:about="http://armstrongaboxes.com/acl/university#Course">
+        <owl:disjointWith rdf:resource="http://armstrongaboxes.com/acl/university#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://armstrongaboxes.com/acl/university#PGCourse -->
+
+
+    <owl:Class rdf:about="http://armstrongaboxes.com/acl/university#PGCourse">
+        <rdfs:subClassOf rdf:resource="http://armstrongaboxes.com/acl/university#Course"/>
+    </owl:Class>
+    
+
+
+    <!-- http://armstrongaboxes.com/acl/university#PGStudent -->
+
+
+    <owl:Class rdf:about="http://armstrongaboxes.com/acl/university#PGStudent">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Student"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://armstrongaboxes.com/acl/university#attends"/>
+                        <owl:allValuesFrom rdf:resource="http://armstrongaboxes.com/acl/university#PGCourse"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://armstrongaboxes.com/acl/university#Person -->
+
+
+    <owl:Class rdf:about="http://armstrongaboxes.com/acl/university#Person"/>
+    
+
+
+    <!-- http://armstrongaboxes.com/acl/university#Student -->
+
+
+    <owl:Class rdf:about="http://armstrongaboxes.com/acl/university#Student">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Person"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://armstrongaboxes.com/acl/university#attends"/>
+                        <owl:someValuesFrom rdf:resource="http://armstrongaboxes.com/acl/university#Course"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://armstrongaboxes.com/acl/university#Teacher -->
+
+
+    <owl:Class rdf:about="http://armstrongaboxes.com/acl/university#Teacher">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Person"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://armstrongaboxes.com/acl/university#teaches"/>
+                        <owl:someValuesFrom rdf:resource="http://armstrongaboxes.com/acl/university#Course"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://armstrongaboxes.com/acl/university#UGCourse -->
+
+
+    <owl:Class rdf:about="http://armstrongaboxes.com/acl/university#UGCourse">
+        <rdfs:subClassOf rdf:resource="http://armstrongaboxes.com/acl/university#Course"/>
+    </owl:Class>
+    
+
+
+    <!-- http://armstrongaboxes.com/acl/university#UGStudent -->
+
+
+    <owl:Class rdf:about="http://armstrongaboxes.com/acl/university#UGStudent">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Student"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://armstrongaboxes.com/acl/university#attends"/>
+                        <owl:allValuesFrom rdf:resource="http://armstrongaboxes.com/acl/university#UGCourse"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://armstrongaboxes.com/acl/university#xSatisfying25 -->
+
+
+    <owl:NamedIndividual rdf:about="http://armstrongaboxes.com/acl/university#xSatisfying25">
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Person"/>
+                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Student"/>
+                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Teacher"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Student"/>
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Teacher"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Student"/>
+                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Teacher"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdfs:comment>Subsumee = ObjectIntersectionOf(&lt;http://armstrongaboxes.com/acl/university#Student&gt; &lt;http://armstrongaboxes.com/acl/university#Teacher&gt;)
+Subsumer = ObjectIntersectionOf(&lt;http://armstrongaboxes.com/acl/university#Person&gt; &lt;http://armstrongaboxes.com/acl/university#Student&gt; &lt;http://armstrongaboxes.com/acl/university#Teacher&gt; ObjectUnionOf(&lt;http://armstrongaboxes.com/acl/university#Student&gt; &lt;http://armstrongaboxes.com/acl/university#Teacher&gt;))</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://armstrongaboxes.com/acl/university#xSatisfying27 -->
+
+
+    <owl:NamedIndividual rdf:about="http://armstrongaboxes.com/acl/university#xSatisfying27">
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Person"/>
+                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Student"/>
+                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Teacher"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Student"/>
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Teacher"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Student"/>
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Teacher"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdfs:comment>Subsumee = ObjectIntersectionOf(ObjectIntersectionOf(&lt;http://armstrongaboxes.com/acl/university#Student&gt; &lt;http://armstrongaboxes.com/acl/university#Teacher&gt;) ObjectUnionOf(&lt;http://armstrongaboxes.com/acl/university#Student&gt; &lt;http://armstrongaboxes.com/acl/university#Teacher&gt;))
+Subsumer = ObjectIntersectionOf(&lt;http://armstrongaboxes.com/acl/university#Person&gt; &lt;http://armstrongaboxes.com/acl/university#Student&gt; &lt;http://armstrongaboxes.com/acl/university#Teacher&gt;)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://armstrongaboxes.com/acl/university#xSatisfying29 -->
+
+
+    <owl:NamedIndividual rdf:about="http://armstrongaboxes.com/acl/university#xSatisfying29">
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Person"/>
+                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Student"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Student"/>
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Teacher"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Teacher"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Student"/>
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Teacher"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdfs:comment>Subsumee = ObjectIntersectionOf(&lt;http://armstrongaboxes.com/acl/university#Teacher&gt; ObjectIntersectionOf(&lt;http://armstrongaboxes.com/acl/university#Student&gt; &lt;http://armstrongaboxes.com/acl/university#Teacher&gt;))
+Subsumer = ObjectIntersectionOf(&lt;http://armstrongaboxes.com/acl/university#Person&gt; &lt;http://armstrongaboxes.com/acl/university#Student&gt; ObjectUnionOf(&lt;http://armstrongaboxes.com/acl/university#Student&gt; &lt;http://armstrongaboxes.com/acl/university#Teacher&gt;))</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://armstrongaboxes.com/acl/university#xSatisfying30 -->
+
+
+    <owl:NamedIndividual rdf:about="http://armstrongaboxes.com/acl/university#xSatisfying30">
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Teacher"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Student"/>
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Teacher"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Person"/>
+                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Student"/>
+                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Teacher"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Student"/>
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Teacher"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Student"/>
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Teacher"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:unionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdfs:comment>Subsumee = ObjectIntersectionOf(&lt;http://armstrongaboxes.com/acl/university#Teacher&gt; ObjectUnionOf(&lt;http://armstrongaboxes.com/acl/university#Student&gt; &lt;http://armstrongaboxes.com/acl/university#Teacher&gt;))
+Subsumer = ObjectUnionOf(&lt;http://armstrongaboxes.com/acl/university#Person&gt; &lt;http://armstrongaboxes.com/acl/university#Student&gt; &lt;http://armstrongaboxes.com/acl/university#Teacher&gt; ObjectIntersectionOf(&lt;http://armstrongaboxes.com/acl/university#Student&gt; &lt;http://armstrongaboxes.com/acl/university#Teacher&gt;) ObjectUnionOf(&lt;http://armstrongaboxes.com/acl/university#Student&gt; &lt;http://armstrongaboxes.com/acl/university#Teacher&gt;))</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://armstrongaboxes.com/acl/university#xSatisfying31 -->
+
+
+    <owl:NamedIndividual rdf:about="http://armstrongaboxes.com/acl/university#xSatisfying31">
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Person"/>
+                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Student"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Teacher"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Student"/>
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Teacher"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Student"/>
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Teacher"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdfs:comment>Subsumee = ObjectIntersectionOf(&lt;http://armstrongaboxes.com/acl/university#Teacher&gt; ObjectIntersectionOf(&lt;http://armstrongaboxes.com/acl/university#Student&gt; &lt;http://armstrongaboxes.com/acl/university#Teacher&gt;) ObjectUnionOf(&lt;http://armstrongaboxes.com/acl/university#Student&gt; &lt;http://armstrongaboxes.com/acl/university#Teacher&gt;))
+Subsumer = ObjectIntersectionOf(&lt;http://armstrongaboxes.com/acl/university#Person&gt; &lt;http://armstrongaboxes.com/acl/university#Student&gt;)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://armstrongaboxes.com/acl/university#xSatisfying33 -->
+
+
+    <owl:NamedIndividual rdf:about="http://armstrongaboxes.com/acl/university#xSatisfying33">
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Person"/>
+                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Teacher"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Student"/>
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Teacher"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Student"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Student"/>
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Teacher"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdfs:comment>Subsumee = ObjectIntersectionOf(&lt;http://armstrongaboxes.com/acl/university#Student&gt; ObjectIntersectionOf(&lt;http://armstrongaboxes.com/acl/university#Student&gt; &lt;http://armstrongaboxes.com/acl/university#Teacher&gt;))
+Subsumer = ObjectIntersectionOf(&lt;http://armstrongaboxes.com/acl/university#Person&gt; &lt;http://armstrongaboxes.com/acl/university#Teacher&gt; ObjectUnionOf(&lt;http://armstrongaboxes.com/acl/university#Student&gt; &lt;http://armstrongaboxes.com/acl/university#Teacher&gt;))</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://armstrongaboxes.com/acl/university#xSatisfying34 -->
+
+
+    <owl:NamedIndividual rdf:about="http://armstrongaboxes.com/acl/university#xSatisfying34">
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Student"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Student"/>
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Teacher"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Person"/>
+                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Student"/>
+                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Teacher"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Student"/>
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Teacher"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Student"/>
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Teacher"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:unionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdfs:comment>Subsumee = ObjectIntersectionOf(&lt;http://armstrongaboxes.com/acl/university#Student&gt; ObjectUnionOf(&lt;http://armstrongaboxes.com/acl/university#Student&gt; &lt;http://armstrongaboxes.com/acl/university#Teacher&gt;))
+Subsumer = ObjectUnionOf(&lt;http://armstrongaboxes.com/acl/university#Person&gt; &lt;http://armstrongaboxes.com/acl/university#Student&gt; &lt;http://armstrongaboxes.com/acl/university#Teacher&gt; ObjectIntersectionOf(&lt;http://armstrongaboxes.com/acl/university#Student&gt; &lt;http://armstrongaboxes.com/acl/university#Teacher&gt;) ObjectUnionOf(&lt;http://armstrongaboxes.com/acl/university#Student&gt; &lt;http://armstrongaboxes.com/acl/university#Teacher&gt;))</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://armstrongaboxes.com/acl/university#xSatisfying35 -->
+
+
+    <owl:NamedIndividual rdf:about="http://armstrongaboxes.com/acl/university#xSatisfying35">
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Person"/>
+                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Teacher"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Student"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Student"/>
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Teacher"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Student"/>
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Teacher"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdfs:comment>Subsumee = ObjectIntersectionOf(&lt;http://armstrongaboxes.com/acl/university#Student&gt; ObjectIntersectionOf(&lt;http://armstrongaboxes.com/acl/university#Student&gt; &lt;http://armstrongaboxes.com/acl/university#Teacher&gt;) ObjectUnionOf(&lt;http://armstrongaboxes.com/acl/university#Student&gt; &lt;http://armstrongaboxes.com/acl/university#Teacher&gt;))
+Subsumer = ObjectIntersectionOf(&lt;http://armstrongaboxes.com/acl/university#Person&gt; &lt;http://armstrongaboxes.com/acl/university#Teacher&gt;)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://armstrongaboxes.com/acl/university#xSatisfying36 -->
+
+
+    <owl:NamedIndividual rdf:about="http://armstrongaboxes.com/acl/university#xSatisfying36">
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Person"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Student"/>
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Teacher"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Student"/>
+                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Teacher"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Student"/>
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Teacher"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdfs:comment>Subsumee = ObjectIntersectionOf(&lt;http://armstrongaboxes.com/acl/university#Person&gt; ObjectIntersectionOf(&lt;http://armstrongaboxes.com/acl/university#Student&gt; &lt;http://armstrongaboxes.com/acl/university#Teacher&gt;))
+Subsumer = ObjectIntersectionOf(&lt;http://armstrongaboxes.com/acl/university#Student&gt; &lt;http://armstrongaboxes.com/acl/university#Teacher&gt; ObjectUnionOf(&lt;http://armstrongaboxes.com/acl/university#Student&gt; &lt;http://armstrongaboxes.com/acl/university#Teacher&gt;))</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://armstrongaboxes.com/acl/university#xSatisfying37 -->
+
+
+    <owl:NamedIndividual rdf:about="http://armstrongaboxes.com/acl/university#xSatisfying37">
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Person"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Student"/>
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Teacher"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Person"/>
+                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Student"/>
+                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Teacher"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Student"/>
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Teacher"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Student"/>
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Teacher"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:unionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdfs:comment>Subsumee = ObjectIntersectionOf(&lt;http://armstrongaboxes.com/acl/university#Person&gt; ObjectUnionOf(&lt;http://armstrongaboxes.com/acl/university#Student&gt; &lt;http://armstrongaboxes.com/acl/university#Teacher&gt;))
+Subsumer = ObjectUnionOf(&lt;http://armstrongaboxes.com/acl/university#Person&gt; &lt;http://armstrongaboxes.com/acl/university#Student&gt; &lt;http://armstrongaboxes.com/acl/university#Teacher&gt; ObjectIntersectionOf(&lt;http://armstrongaboxes.com/acl/university#Student&gt; &lt;http://armstrongaboxes.com/acl/university#Teacher&gt;) ObjectUnionOf(&lt;http://armstrongaboxes.com/acl/university#Student&gt; &lt;http://armstrongaboxes.com/acl/university#Teacher&gt;))</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://armstrongaboxes.com/acl/university#xSatisfying38 -->
+
+
+    <owl:NamedIndividual rdf:about="http://armstrongaboxes.com/acl/university#xSatisfying38">
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Person"/>
+                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Teacher"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Person"/>
+                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Student"/>
+                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Teacher"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Student"/>
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Teacher"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Student"/>
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Teacher"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:unionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdfs:comment>Subsumee = ObjectIntersectionOf(&lt;http://armstrongaboxes.com/acl/university#Person&gt; &lt;http://armstrongaboxes.com/acl/university#Teacher&gt;)
+Subsumer = ObjectUnionOf(&lt;http://armstrongaboxes.com/acl/university#Person&gt; &lt;http://armstrongaboxes.com/acl/university#Student&gt; &lt;http://armstrongaboxes.com/acl/university#Teacher&gt; ObjectIntersectionOf(&lt;http://armstrongaboxes.com/acl/university#Student&gt; &lt;http://armstrongaboxes.com/acl/university#Teacher&gt;) ObjectUnionOf(&lt;http://armstrongaboxes.com/acl/university#Student&gt; &lt;http://armstrongaboxes.com/acl/university#Teacher&gt;))</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://armstrongaboxes.com/acl/university#xSatisfying39 -->
+
+
+    <owl:NamedIndividual rdf:about="http://armstrongaboxes.com/acl/university#xSatisfying39">
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Person"/>
+                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Teacher"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Student"/>
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Teacher"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Student"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Student"/>
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Teacher"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdfs:comment>Subsumee = ObjectIntersectionOf(&lt;http://armstrongaboxes.com/acl/university#Person&gt; &lt;http://armstrongaboxes.com/acl/university#Teacher&gt; ObjectIntersectionOf(&lt;http://armstrongaboxes.com/acl/university#Student&gt; &lt;http://armstrongaboxes.com/acl/university#Teacher&gt;))
+Subsumer = ObjectIntersectionOf(&lt;http://armstrongaboxes.com/acl/university#Student&gt; ObjectUnionOf(&lt;http://armstrongaboxes.com/acl/university#Student&gt; &lt;http://armstrongaboxes.com/acl/university#Teacher&gt;))</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://armstrongaboxes.com/acl/university#xSatisfying40 -->
+
+
+    <owl:NamedIndividual rdf:about="http://armstrongaboxes.com/acl/university#xSatisfying40">
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Person"/>
+                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Teacher"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Student"/>
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Teacher"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Person"/>
+                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Student"/>
+                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Teacher"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Student"/>
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Teacher"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Student"/>
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Teacher"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:unionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdfs:comment>Subsumee = ObjectIntersectionOf(&lt;http://armstrongaboxes.com/acl/university#Person&gt; &lt;http://armstrongaboxes.com/acl/university#Teacher&gt; ObjectUnionOf(&lt;http://armstrongaboxes.com/acl/university#Student&gt; &lt;http://armstrongaboxes.com/acl/university#Teacher&gt;))
+Subsumer = ObjectUnionOf(&lt;http://armstrongaboxes.com/acl/university#Person&gt; &lt;http://armstrongaboxes.com/acl/university#Student&gt; &lt;http://armstrongaboxes.com/acl/university#Teacher&gt; ObjectIntersectionOf(&lt;http://armstrongaboxes.com/acl/university#Student&gt; &lt;http://armstrongaboxes.com/acl/university#Teacher&gt;) ObjectUnionOf(&lt;http://armstrongaboxes.com/acl/university#Student&gt; &lt;http://armstrongaboxes.com/acl/university#Teacher&gt;))</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://armstrongaboxes.com/acl/university#xSatisfying41 -->
+
+
+    <owl:NamedIndividual rdf:about="http://armstrongaboxes.com/acl/university#xSatisfying41">
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Person"/>
+                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Student"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Person"/>
+                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Student"/>
+                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Teacher"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Student"/>
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Teacher"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Student"/>
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Teacher"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:unionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdfs:comment>Subsumee = ObjectIntersectionOf(&lt;http://armstrongaboxes.com/acl/university#Person&gt; &lt;http://armstrongaboxes.com/acl/university#Student&gt;)
+Subsumer = ObjectUnionOf(&lt;http://armstrongaboxes.com/acl/university#Person&gt; &lt;http://armstrongaboxes.com/acl/university#Student&gt; &lt;http://armstrongaboxes.com/acl/university#Teacher&gt; ObjectIntersectionOf(&lt;http://armstrongaboxes.com/acl/university#Student&gt; &lt;http://armstrongaboxes.com/acl/university#Teacher&gt;) ObjectUnionOf(&lt;http://armstrongaboxes.com/acl/university#Student&gt; &lt;http://armstrongaboxes.com/acl/university#Teacher&gt;))</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://armstrongaboxes.com/acl/university#xSatisfying42 -->
+
+
+    <owl:NamedIndividual rdf:about="http://armstrongaboxes.com/acl/university#xSatisfying42">
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Person"/>
+                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Student"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Student"/>
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Teacher"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Teacher"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Student"/>
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Teacher"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdfs:comment>Subsumee = ObjectIntersectionOf(&lt;http://armstrongaboxes.com/acl/university#Person&gt; &lt;http://armstrongaboxes.com/acl/university#Student&gt; ObjectIntersectionOf(&lt;http://armstrongaboxes.com/acl/university#Student&gt; &lt;http://armstrongaboxes.com/acl/university#Teacher&gt;))
+Subsumer = ObjectIntersectionOf(&lt;http://armstrongaboxes.com/acl/university#Teacher&gt; ObjectUnionOf(&lt;http://armstrongaboxes.com/acl/university#Student&gt; &lt;http://armstrongaboxes.com/acl/university#Teacher&gt;))</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://armstrongaboxes.com/acl/university#xSatisfying43 -->
+
+
+    <owl:NamedIndividual rdf:about="http://armstrongaboxes.com/acl/university#xSatisfying43">
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Person"/>
+                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Student"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Student"/>
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Teacher"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Person"/>
+                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Student"/>
+                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Teacher"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Student"/>
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Teacher"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Student"/>
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Teacher"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:unionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdfs:comment>Subsumee = ObjectIntersectionOf(&lt;http://armstrongaboxes.com/acl/university#Person&gt; &lt;http://armstrongaboxes.com/acl/university#Student&gt; ObjectUnionOf(&lt;http://armstrongaboxes.com/acl/university#Student&gt; &lt;http://armstrongaboxes.com/acl/university#Teacher&gt;))
+Subsumer = ObjectUnionOf(&lt;http://armstrongaboxes.com/acl/university#Person&gt; &lt;http://armstrongaboxes.com/acl/university#Student&gt; &lt;http://armstrongaboxes.com/acl/university#Teacher&gt; ObjectIntersectionOf(&lt;http://armstrongaboxes.com/acl/university#Student&gt; &lt;http://armstrongaboxes.com/acl/university#Teacher&gt;) ObjectUnionOf(&lt;http://armstrongaboxes.com/acl/university#Student&gt; &lt;http://armstrongaboxes.com/acl/university#Teacher&gt;))</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://armstrongaboxes.com/acl/university#xViolating24 -->
+
+
+    <owl:NamedIndividual rdf:about="http://armstrongaboxes.com/acl/university#xViolating24">
+        <rdf:type>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Person"/>
+                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Student"/>
+                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Teacher"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Student"/>
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Teacher"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Student"/>
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Teacher"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:unionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Person"/>
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Student"/>
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Teacher"/>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Student"/>
+                                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Teacher"/>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Student"/>
+                                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Teacher"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:complementOf>
+            </owl:Class>
+        </rdf:type>
+        <rdfs:comment>Subsumee = ObjectUnionOf(&lt;http://armstrongaboxes.com/acl/university#Person&gt; &lt;http://armstrongaboxes.com/acl/university#Student&gt; &lt;http://armstrongaboxes.com/acl/university#Teacher&gt; ObjectIntersectionOf(&lt;http://armstrongaboxes.com/acl/university#Student&gt; &lt;http://armstrongaboxes.com/acl/university#Teacher&gt;) ObjectUnionOf(&lt;http://armstrongaboxes.com/acl/university#Student&gt; &lt;http://armstrongaboxes.com/acl/university#Teacher&gt;))
+Subsumer = ObjectIntersectionOf(&lt;http://armstrongaboxes.com/acl/university#Person&gt; &lt;http://armstrongaboxes.com/acl/university#Student&gt; &lt;http://armstrongaboxes.com/acl/university#Teacher&gt; ObjectIntersectionOf(&lt;http://armstrongaboxes.com/acl/university#Student&gt; &lt;http://armstrongaboxes.com/acl/university#Teacher&gt;) ObjectUnionOf(&lt;http://armstrongaboxes.com/acl/university#Student&gt; &lt;http://armstrongaboxes.com/acl/university#Teacher&gt;))</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://armstrongaboxes.com/acl/university#xViolating26 -->
+
+
+    <owl:NamedIndividual rdf:about="http://armstrongaboxes.com/acl/university#xViolating26">
+        <rdf:type>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Student"/>
+                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Teacher"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Person"/>
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Student"/>
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Teacher"/>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Student"/>
+                                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Teacher"/>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:complementOf>
+            </owl:Class>
+        </rdf:type>
+        <rdfs:comment>Subsumee = ObjectUnionOf(&lt;http://armstrongaboxes.com/acl/university#Student&gt; &lt;http://armstrongaboxes.com/acl/university#Teacher&gt;)
+Subsumer = ObjectIntersectionOf(&lt;http://armstrongaboxes.com/acl/university#Person&gt; &lt;http://armstrongaboxes.com/acl/university#Student&gt; &lt;http://armstrongaboxes.com/acl/university#Teacher&gt; ObjectIntersectionOf(&lt;http://armstrongaboxes.com/acl/university#Student&gt; &lt;http://armstrongaboxes.com/acl/university#Teacher&gt;))</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://armstrongaboxes.com/acl/university#xViolating28 -->
+
+
+    <owl:NamedIndividual rdf:about="http://armstrongaboxes.com/acl/university#xViolating28">
+        <rdf:type rdf:resource="http://armstrongaboxes.com/acl/university#Teacher"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Person"/>
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Student"/>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Student"/>
+                                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Teacher"/>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Student"/>
+                                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Teacher"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:complementOf>
+            </owl:Class>
+        </rdf:type>
+        <rdfs:comment>Subsumee = &lt;http://armstrongaboxes.com/acl/university#Teacher&gt;
+Subsumer = ObjectIntersectionOf(&lt;http://armstrongaboxes.com/acl/university#Person&gt; &lt;http://armstrongaboxes.com/acl/university#Student&gt; ObjectIntersectionOf(&lt;http://armstrongaboxes.com/acl/university#Student&gt; &lt;http://armstrongaboxes.com/acl/university#Teacher&gt;) ObjectUnionOf(&lt;http://armstrongaboxes.com/acl/university#Student&gt; &lt;http://armstrongaboxes.com/acl/university#Teacher&gt;))</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://armstrongaboxes.com/acl/university#xViolating32 -->
+
+
+    <owl:NamedIndividual rdf:about="http://armstrongaboxes.com/acl/university#xViolating32">
+        <rdf:type rdf:resource="http://armstrongaboxes.com/acl/university#Student"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Person"/>
+                            <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Teacher"/>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Student"/>
+                                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Teacher"/>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Student"/>
+                                    <rdf:Description rdf:about="http://armstrongaboxes.com/acl/university#Teacher"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:complementOf>
+            </owl:Class>
+        </rdf:type>
+        <rdfs:comment>Subsumee = &lt;http://armstrongaboxes.com/acl/university#Student&gt;
+Subsumer = ObjectIntersectionOf(&lt;http://armstrongaboxes.com/acl/university#Person&gt; &lt;http://armstrongaboxes.com/acl/university#Teacher&gt; ObjectIntersectionOf(&lt;http://armstrongaboxes.com/acl/university#Student&gt; &lt;http://armstrongaboxes.com/acl/university#Teacher&gt;) ObjectUnionOf(&lt;http://armstrongaboxes.com/acl/university#Student&gt; &lt;http://armstrongaboxes.com/acl/university#Teacher&gt;))</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://armstrongaboxes.com/acl/university#attends"/>
+        <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf rdf:resource="http://armstrongaboxes.com/acl/university#Person"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://armstrongaboxes.com/acl/university#teaches"/>
+        <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf rdf:resource="http://armstrongaboxes.com/acl/university#Person"/>
+    </owl:Restriction>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.2.2017-10-13T07:13:07Z) https://github.com/owlcs/owlapi/ -->
+
+

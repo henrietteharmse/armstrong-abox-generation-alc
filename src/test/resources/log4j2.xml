@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration package="log4j.test"
+status="WARN">
+<Appenders>
+    <Console name="Console" target="SYSTEM_OUT">
+        <PatternLayout pattern="%markerSimpleName %-5p %C.%M():%L - %msg %ex{full}%n"/>
+    </Console>
+    <File name="ArmstrongLog" fileName="./logs/abox-generation-alc.log">
+      <PatternLayout>
+        <Pattern>%markerSimpleName %-5p %C.%M():%L - %msg %ex{full}%n</Pattern>
+      </PatternLayout>
+    </File>    
+</Appenders>
+<Loggers>
+    <Logger name="org.armstrong.abox" level="trace" additivity="false">
+      <AppenderRef ref="ArmstrongLog"/>
+    </Logger>
+</Loggers>
+</Configuration>

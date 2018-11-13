@@ -1,0 +1,981 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#"
+     xml:base="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Composite -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Composite"/>
+    
+
+
+    <!-- http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Even -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Even"/>
+    
+
+
+    <!-- http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Odd -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Odd"/>
+    
+
+
+    <!-- http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Prime -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Prime"/>
+    
+
+
+    <!-- http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Square -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Square"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#xViolating1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#xViolating1">
+        <rdf:type>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Composite"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Even"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Odd"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Prime"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Square"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Composite"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Even"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Odd"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Prime"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Square"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:complementOf>
+            </owl:Class>
+        </rdf:type>
+        <rdfs:comment>Subsumee = ObjectUnionOf(&lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Composite&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Even&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Odd&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Prime&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Square&gt;)
+Subsumer = ObjectIntersectionOf(&lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Composite&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Even&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Odd&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Prime&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Square&gt;)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#xViolating10 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#xViolating10">
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Even"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Square"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Composite"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Odd"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Prime"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:complementOf>
+            </owl:Class>
+        </rdf:type>
+        <rdfs:comment>Subsumee = ObjectIntersectionOf(&lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Even&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Square&gt;)
+Subsumer = ObjectIntersectionOf(&lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Composite&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Odd&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Prime&gt;)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#xViolating11 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#xViolating11">
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Even"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Prime"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Composite"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Odd"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Square"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:complementOf>
+            </owl:Class>
+        </rdf:type>
+        <rdfs:comment>Subsumee = ObjectIntersectionOf(&lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Even&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Prime&gt;)
+Subsumer = ObjectIntersectionOf(&lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Composite&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Odd&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Square&gt;)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#xViolating12 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#xViolating12">
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Even"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Prime"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Square"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Composite"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Odd"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:complementOf>
+            </owl:Class>
+        </rdf:type>
+        <rdfs:comment>Subsumee = ObjectIntersectionOf(&lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Even&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Prime&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Square&gt;)
+Subsumer = ObjectIntersectionOf(&lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Composite&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Odd&gt;)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#xViolating13 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#xViolating13">
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Even"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Odd"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Composite"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Prime"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Square"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:complementOf>
+            </owl:Class>
+        </rdf:type>
+        <rdfs:comment>Subsumee = ObjectIntersectionOf(&lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Even&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Odd&gt;)
+Subsumer = ObjectIntersectionOf(&lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Composite&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Prime&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Square&gt;)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#xViolating14 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#xViolating14">
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Even"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Odd"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Square"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Composite"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Prime"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:complementOf>
+            </owl:Class>
+        </rdf:type>
+        <rdfs:comment>Subsumee = ObjectIntersectionOf(&lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Even&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Odd&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Square&gt;)
+Subsumer = ObjectIntersectionOf(&lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Composite&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Prime&gt;)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#xViolating15 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#xViolating15">
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Even"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Odd"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Prime"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Composite"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Square"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:complementOf>
+            </owl:Class>
+        </rdf:type>
+        <rdfs:comment>Subsumee = ObjectIntersectionOf(&lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Even&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Odd&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Prime&gt;)
+Subsumer = ObjectIntersectionOf(&lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Composite&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Square&gt;)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#xViolating16 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#xViolating16">
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Even"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Odd"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Prime"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Square"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:complementOf rdf:resource="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Composite"/>
+            </owl:Class>
+        </rdf:type>
+        <rdfs:comment>Subsumee = ObjectIntersectionOf(&lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Even&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Odd&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Prime&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Square&gt;)
+Subsumer = &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Composite&gt;</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#xViolating17 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#xViolating17">
+        <rdf:type rdf:resource="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Composite"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Even"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Odd"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Prime"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Square"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:complementOf>
+            </owl:Class>
+        </rdf:type>
+        <rdfs:comment>Subsumee = &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Composite&gt;
+Subsumer = ObjectIntersectionOf(&lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Even&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Odd&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Prime&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Square&gt;)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#xViolating18 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#xViolating18">
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Composite"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Square"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Even"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Odd"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Prime"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:complementOf>
+            </owl:Class>
+        </rdf:type>
+        <rdfs:comment>Subsumee = ObjectIntersectionOf(&lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Composite&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Square&gt;)
+Subsumer = ObjectIntersectionOf(&lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Even&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Odd&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Prime&gt;)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#xViolating19 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#xViolating19">
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Composite"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Prime"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Even"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Odd"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Square"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:complementOf>
+            </owl:Class>
+        </rdf:type>
+        <rdfs:comment>Subsumee = ObjectIntersectionOf(&lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Composite&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Prime&gt;)
+Subsumer = ObjectIntersectionOf(&lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Even&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Odd&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Square&gt;)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#xViolating2 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#xViolating2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Square"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Composite"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Even"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Odd"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Prime"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:complementOf>
+            </owl:Class>
+        </rdf:type>
+        <rdfs:comment>Subsumee = &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Square&gt;
+Subsumer = ObjectIntersectionOf(&lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Composite&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Even&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Odd&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Prime&gt;)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#xViolating20 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#xViolating20">
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Composite"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Prime"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Square"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Even"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Odd"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:complementOf>
+            </owl:Class>
+        </rdf:type>
+        <rdfs:comment>Subsumee = ObjectIntersectionOf(&lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Composite&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Prime&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Square&gt;)
+Subsumer = ObjectIntersectionOf(&lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Even&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Odd&gt;)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#xViolating21 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#xViolating21">
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Composite"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Odd"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Even"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Prime"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Square"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:complementOf>
+            </owl:Class>
+        </rdf:type>
+        <rdfs:comment>Subsumee = ObjectIntersectionOf(&lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Composite&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Odd&gt;)
+Subsumer = ObjectIntersectionOf(&lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Even&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Prime&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Square&gt;)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#xViolating22 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#xViolating22">
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Composite"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Odd"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Square"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Even"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Prime"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:complementOf>
+            </owl:Class>
+        </rdf:type>
+        <rdfs:comment>Subsumee = ObjectIntersectionOf(&lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Composite&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Odd&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Square&gt;)
+Subsumer = ObjectIntersectionOf(&lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Even&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Prime&gt;)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#xViolating23 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#xViolating23">
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Composite"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Odd"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Prime"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Even"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Square"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:complementOf>
+            </owl:Class>
+        </rdf:type>
+        <rdfs:comment>Subsumee = ObjectIntersectionOf(&lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Composite&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Odd&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Prime&gt;)
+Subsumer = ObjectIntersectionOf(&lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Even&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Square&gt;)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#xViolating24 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#xViolating24">
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Composite"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Odd"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Prime"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Square"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:complementOf rdf:resource="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Even"/>
+            </owl:Class>
+        </rdf:type>
+        <rdfs:comment>Subsumee = ObjectIntersectionOf(&lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Composite&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Odd&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Prime&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Square&gt;)
+Subsumer = &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Even&gt;</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#xViolating25 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#xViolating25">
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Composite"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Even"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Odd"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Prime"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Square"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:complementOf>
+            </owl:Class>
+        </rdf:type>
+        <rdfs:comment>Subsumee = ObjectIntersectionOf(&lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Composite&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Even&gt;)
+Subsumer = ObjectIntersectionOf(&lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Odd&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Prime&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Square&gt;)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#xViolating26 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#xViolating26">
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Composite"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Even"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Square"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Odd"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Prime"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:complementOf>
+            </owl:Class>
+        </rdf:type>
+        <rdfs:comment>Subsumee = ObjectIntersectionOf(&lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Composite&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Even&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Square&gt;)
+Subsumer = ObjectIntersectionOf(&lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Odd&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Prime&gt;)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#xViolating27 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#xViolating27">
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Composite"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Even"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Prime"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Odd"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Square"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:complementOf>
+            </owl:Class>
+        </rdf:type>
+        <rdfs:comment>Subsumee = ObjectIntersectionOf(&lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Composite&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Even&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Prime&gt;)
+Subsumer = ObjectIntersectionOf(&lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Odd&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Square&gt;)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#xViolating28 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#xViolating28">
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Composite"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Even"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Prime"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Square"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:complementOf rdf:resource="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Odd"/>
+            </owl:Class>
+        </rdf:type>
+        <rdfs:comment>Subsumee = ObjectIntersectionOf(&lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Composite&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Even&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Prime&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Square&gt;)
+Subsumer = &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Odd&gt;</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#xViolating29 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#xViolating29">
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Composite"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Even"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Odd"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Prime"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Square"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:complementOf>
+            </owl:Class>
+        </rdf:type>
+        <rdfs:comment>Subsumee = ObjectIntersectionOf(&lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Composite&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Even&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Odd&gt;)
+Subsumer = ObjectIntersectionOf(&lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Prime&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Square&gt;)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#xViolating3 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#xViolating3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Prime"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Composite"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Even"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Odd"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Square"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:complementOf>
+            </owl:Class>
+        </rdf:type>
+        <rdfs:comment>Subsumee = &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Prime&gt;
+Subsumer = ObjectIntersectionOf(&lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Composite&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Even&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Odd&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Square&gt;)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#xViolating30 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#xViolating30">
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Composite"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Even"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Odd"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Square"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:complementOf rdf:resource="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Prime"/>
+            </owl:Class>
+        </rdf:type>
+        <rdfs:comment>Subsumee = ObjectIntersectionOf(&lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Composite&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Even&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Odd&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Square&gt;)
+Subsumer = &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Prime&gt;</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#xViolating31 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#xViolating31">
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Composite"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Even"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Odd"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Prime"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:complementOf rdf:resource="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Square"/>
+            </owl:Class>
+        </rdf:type>
+        <rdfs:comment>Subsumee = ObjectIntersectionOf(&lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Composite&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Even&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Odd&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Prime&gt;)
+Subsumer = &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Square&gt;</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#xViolating4 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#xViolating4">
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Prime"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Square"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Composite"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Even"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Odd"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:complementOf>
+            </owl:Class>
+        </rdf:type>
+        <rdfs:comment>Subsumee = ObjectIntersectionOf(&lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Prime&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Square&gt;)
+Subsumer = ObjectIntersectionOf(&lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Composite&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Even&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Odd&gt;)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#xViolating5 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#xViolating5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Odd"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Composite"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Even"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Prime"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Square"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:complementOf>
+            </owl:Class>
+        </rdf:type>
+        <rdfs:comment>Subsumee = &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Odd&gt;
+Subsumer = ObjectIntersectionOf(&lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Composite&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Even&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Prime&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Square&gt;)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#xViolating6 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#xViolating6">
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Odd"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Square"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Composite"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Even"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Prime"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:complementOf>
+            </owl:Class>
+        </rdf:type>
+        <rdfs:comment>Subsumee = ObjectIntersectionOf(&lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Odd&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Square&gt;)
+Subsumer = ObjectIntersectionOf(&lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Composite&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Even&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Prime&gt;)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#xViolating7 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#xViolating7">
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Odd"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Prime"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Composite"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Even"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Square"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:complementOf>
+            </owl:Class>
+        </rdf:type>
+        <rdfs:comment>Subsumee = ObjectIntersectionOf(&lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Odd&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Prime&gt;)
+Subsumer = ObjectIntersectionOf(&lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Composite&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Even&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Square&gt;)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#xViolating8 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#xViolating8">
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Odd"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Prime"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Square"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Composite"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Even"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:complementOf>
+            </owl:Class>
+        </rdf:type>
+        <rdfs:comment>Subsumee = ObjectIntersectionOf(&lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Odd&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Prime&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Square&gt;)
+Subsumer = ObjectIntersectionOf(&lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Composite&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Even&gt;)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#xViolating9 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#xViolating9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Even"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Composite"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Odd"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Prime"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Square"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:complementOf>
+            </owl:Class>
+        </rdf:type>
+        <rdfs:comment>Subsumee = &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Even&gt;
+Subsumer = ObjectIntersectionOf(&lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Composite&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Odd&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Prime&gt; &lt;http://www.semanticweb.org/henriette/ontologies/2018/6/untitled-ontology-1253#Square&gt;)</rdfs:comment>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.2.2017-10-13T07:13:07Z) https://github.com/owlcs/owlapi/ -->
+
+
